@@ -1,0 +1,47 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 150px;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar-menu a {
+    text-decoration: none;
+    color: black; /* Default color */
+  }
+  
+  .navbar-menu a:visited {
+    color: black; /* Prevents purple color after click */
+  }
+  
+  .navbar-menu a:hover {
+    color: blue; /* Optional: Change on hover */
+  }
+  
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,14 +1,24 @@
-import { useEffect } from "react";
-import { io } from "socket.io-client";
+import React from 'react'
+import './index.css'
+import Navbar from './Components/Navbar/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home/Home'
+import Session from './Pages/Session/Session'
+import MyAccount from './Pages/MyAccount/MyAccount'
+import Footer from './Components/Footer/Footer'
 
-const socket = io("http://localhost:5000");
-
-export default function App() {
-  useEffect(() => {
-    socket.on("connect", () => console.log("Connected to server:", socket.id));
-
-    return () => socket.disconnect();
-  }, []);
-
-  return <h1 className="text-2xl font-bold">CollabCode Frontend</h1>;
+const App = () => {
+  return (
+    <div className='app'>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/session' element={<Session/>}/>
+        <Route path='/account' element={<MyAccount/>}/>
+      </Routes>
+      <Footer/>
+    </div>
+  )
 }
+
+export default App
