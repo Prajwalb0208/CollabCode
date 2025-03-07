@@ -1,0 +1,100 @@
+/* Flyer Container */
+.flyer-container {
+    text-align: center;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 50px 20px;
+    overflow: hidden;
+}
+
+/* Background Circles */
+.background-circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 50%;
+    top: 100px;
+    left: -40px;
+    z-index: -1;
+}
+.background-circle1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 50%;
+    top: -100px;
+    right: -80px;
+    z-index: -1;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c757d;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1.5px solid #007bff;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #0d0d0d;
+    margin: 10px 0;
+}
+
+/* Highlight */
+.highlight {
+    color: #007bff;
+}
+
+/* Description */
+.description {
+    font-size: 18px;
+    color: #6c757d;
+    margin: 15px 0;
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #0056b3;
+}
+
+.btn.secondary {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.btn.secondary:hover {
+    background-color: #f1f1f1;
+}
